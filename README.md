@@ -15,9 +15,12 @@
 
 <h2>Installation</h2>
 <p>1. Clone the repository:</p>
+
+
 ```
 git clone https://github.com/bibek-gotame/TodoApp.git
 ```
+
 <p>2. Navigate into the project directory:</p>
 
 ```
