@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { deleteTodo, toggleIsCompleted } from "../../store/Slices/todoSlice";
-// import { useState } from "react";
 
 function TaskList({ isThemeLight }) {
   const todos = useSelector((store) => store.todo.todos);
@@ -16,7 +15,10 @@ function TaskList({ isThemeLight }) {
       ) : (
         <div className="flex flex-col-reverse">
           {todos?.map((todo) => (
-            <div key={todo.id} className="flex justify-between px-4 items-center">
+            <div
+              key={todo.id}
+              className="flex justify-between px-4 items-center"
+            >
               <div className="flex gap-2 my-2">
                 <input
                   type="checkbox"

@@ -4,21 +4,10 @@ const todoSlice = createSlice({
     name: 'todo',
     initialState: {
         todos: [],
-    //     todo: {
-    //         text: null,
-    //         isCompleted: null,
-    //         id: null,
-    //     },
         isThemeLight: true
     },
     reducers: {
         addTodo: (state, action) => {
-            // const { text, isCompleted, id } = action.payload
-            // state.todo.todo = {
-            //     text: text,
-            //     isCompleted: isCompleted,
-            //     id: id,
-            // }
             state.todos.push(action.payload)
         },
         deleteTodo: (state, action) => {
