@@ -19,23 +19,23 @@
 <p>2. Navigate into the project directory:</p>
 
 <p>3. Install dependencies using npm or yarn:</p>
-````
+```
 npm install
-````
+```
 or
-````
+```
 yarn install
-````
+```
 
 <h2>Usage</h2>
 <p>1. Start the development server</p>
-````
+```
 npm run dev
-````
+```
 or
-````
+```
 yarn dev
-````
+```
 <p>2. Open your web browser and visit http://localhost:3000 to view the Todo App.</p>
 <p>3. Open your web browser and visit http://localhost:3000 to view the Todo App.</p>
 
