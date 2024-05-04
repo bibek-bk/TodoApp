@@ -15,8 +15,13 @@
 
 <h2>Installation</h2>
 <p>1. Clone the repository:</p>
-
+```
+https://github.com/bibek-gotame/TodoApp.git
+```
 <p>2. Navigate into the project directory:</p>
+```
+cd TodoApp
+```
 
 <p>3. Install dependencies using npm or yarn:</p>
 
