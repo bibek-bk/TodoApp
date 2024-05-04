@@ -25,11 +25,11 @@ const todoSlice = createSlice({
             state.todos = state.todos.filter(todo => todo.id != action.payload)
         },
         clearAllTodo: (state) => {
-            return state.todos = []
+             state.todos = []
         },
         
         toggleTheme: (state) => {
-            return state.isThemeLight = !state.isThemeLight
+             state.isThemeLight = !state.isThemeLight
         },
         toggleIsCompleted: (state,action) => {
             const todoId = action.payload;
