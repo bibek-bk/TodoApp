@@ -9,7 +9,7 @@ function Body() {
 
   return (
     <div
-      className={` font-bold  ${
+      className={` font-bold   ${
         isThemeLight ? "bg-white text-black " : "bg-black text-white"
       }`}
     >
