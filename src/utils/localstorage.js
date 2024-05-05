@@ -3,7 +3,7 @@
 
 export const loadState = () => {
     try {
-      const serializedState = localStorage.getItem('todos');
+      const serializedState = localStorage.getItem('todo');
       if (serializedState === null) {
         return undefined;
       }
@@ -18,7 +18,7 @@ export const loadState = () => {
   export const saveState = (state) => {
     try {
       const serializedState = JSON.stringify(state);
-      localStorage.setItem('todos', serializedState);
+      localStorage.setItem('todo', serializedState);
     } catch {
       // Ignore write errors
     }
