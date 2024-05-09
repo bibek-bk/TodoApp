@@ -4,7 +4,7 @@ import store from './store/store'
 function App() {
 
   return (
-    <div className=" h-screen">
+    <div className=" h-screen ">
     <Provider store={store}>
       <Body/>
     </Provider>

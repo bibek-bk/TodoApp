@@ -9,15 +9,17 @@ function Body() {
 
   return (
     <div
-      className={` font-bold   ${
+      className={` font-bold flex flex-col justify-between h-full  ${
         isThemeLight ? "bg-white text-black " : "bg-black text-white"
       }`}
     >
-      <Header isThemeLight={isThemeLight} />
+      <div>
+        <Header isThemeLight={isThemeLight} />
 
-      <div className="max-w-[30rem] w-full mx-auto border rounded-md min-h-96 shadow-lg">
-        <InputTask isThemeLight={isThemeLight} />
-        <TaskList isThemeLight={isThemeLight} />
+        <div className="max-w-[30rem] w-full mx-auto border rounded-md min-h-96 shadow-lg">
+          <InputTask isThemeLight={isThemeLight} />
+          <TaskList isThemeLight={isThemeLight} />
+        </div>
       </div>
 
       <Footer />

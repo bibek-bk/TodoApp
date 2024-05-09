@@ -9,7 +9,7 @@ function TaskList({ isThemeLight }) {
   };
 
   return (
-    <div className="border-t-2 text-center py-2 ">
+    <div className="border-t-2 text-center py-2 w-full ">
       {todos?.length === 0 ? (
         <div>Added task will show here</div>
       ) : (
@@ -25,7 +25,7 @@ function TaskList({ isThemeLight }) {
                   checked={todo.isCompleted}
                   onChange={() => dispatch(toggleIsCompleted(todo.id))}
                 />
-                <p className={todo.isCompleted ? "line-through px-6" : " px-6"}>
+                <p className={` flex-shrink-0 ${todo.isCompleted ? "line-through" : ""} px-6`}>
                   {todo.text}
                 </p>
               </div>
